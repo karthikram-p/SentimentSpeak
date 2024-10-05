@@ -24,5 +24,23 @@ This project facilitates real-time communication across over 20 Indian languages
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/multilingual-voice-translator.git
-   cd multilingual-voice-translator
+   git clone https://github.com/karthikram-p/SentimentSpeak.git
+   cd SentimentSpeak
+
+2. **Install required packages**: Make sure you have Python installed. Then, use pip to install the necessary libraries:
+   ```bash
+   pip install pygame SpeechRecognition googletrans==4.0.0-rc1 nltk
+
+3. **Download NLTK resources**: Open a Python shell and run:
+   ```bash
+   import nltk
+   nltk.download('punkt')
+   nltk.download('vader_lexicon')
+
+## Usage
+ 1. **Run the application**:
+    ```bash
+    python nlp.py
+ 2. **Speak your input**: The application will recognize your speech and prompt you to choose a target language.
+
+ 3. **Review translations and sentiment analysis**: The application will log your conversation and display sentiment scores.
